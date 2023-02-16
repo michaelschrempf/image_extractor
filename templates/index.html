@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Extract Text from Image</title>
+</head>
+<body>
+    <h1>Extract Text from Image</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="image">
+        <input type="submit" value="Extract Text">
+    </form>
+    {% if text %}
+    <hr>
+    <h2>Extracted Text:</h2>
+    <p>{{ text }}</p>
+    {% endif %}
+</body>
+</html>
